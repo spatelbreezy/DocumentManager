@@ -1,0 +1,52 @@
+Initial Document:
+Document name: "Meep"
+Number of Paragraphs: 0
+
+Test Case 1 - remove_text:
+Before removing 'apple':
+Document name: "Meep"
+Number of Paragraphs: 2
+This is an apple.
+I have an apple.
+
+An apple a day keeps the doctor away.
+I like apples.
+After removing 'apple':
+Document name: "Meep"
+Number of Paragraphs: 2
+This is an .
+I have an .
+
+An  a day keeps the doctor away.
+I like s.
+
+Test Case 2 - highlight_text:
+After highlighting 'day':
+Document name: "Meep"
+Number of Paragraphs: 2
+This is an .
+I have an .
+
+An  a [day] keeps the doctor away.
+I like s.
+
+Test Case 3 - replace_text:
+After replacing 'like' with 'love':
+Document name: "Meep"
+Number of Paragraphs: 2
+This is an .
+I have an .
+
+An  a [day] keeps the doctor away.
+I love s.
+
+Test Case 4 - Combination of remove_text, highlight_text, and replace_text:
+After removing 'an', highlighting 'doctor', and replacing 'keeps' with 'helps':
+Document name: "Meep"
+Number of Paragraphs: 2
+This is  .
+I have  .
+
+An  a [day] helps the [doctor] away.
+I love s.
+
